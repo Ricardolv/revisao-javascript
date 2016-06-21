@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		
+	</head>
+	<body>
+
+		<div id="saidaDiv">
+			
+
+		</div>
+
+	</body>
+	<script>
+			function Pessoa(nome, idade) {
+				this.nome = nome;
+				this.idade = idade;
+				this.dizerOi = function() {
+					window.alert("Oi 2");
+				}
+			}
+
+
+			//Pessoa.prototype.dizerOi = function(){ window.alert("Oi")};
+			var p1 = new Pessoa("Bernardo", 3);
+			console.log(p1.nome);
+			console.log(p1.idade);
+			p1.dizerOi();			
+			
+
+	</script>
+</html>

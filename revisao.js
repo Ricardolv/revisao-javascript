@@ -11,6 +11,8 @@ function novoContato() {
 	
 	//l<label>contato:</label>
 	var inputContato = document.createElement("input");
+	inputContato.setAttribute('name', 'txtContato');
+
 	var labelContato = document.createElement("label");
 	labelContato.innerText="contato:";
 
@@ -35,4 +37,16 @@ function novoContato() {
 	divLinha.appendChild(br);
 
 	contatos.appendChild(divLinha);
+}
+
+function iprimirContato() {
+	var arrInputsContatos = document.frmContatos.txtContato;
+
+	var saidaContatos = document.getElementById("saidaContatos");
+	var saida = "";
+	for (i=0; i<arrInputsContatos.length; i++){
+		saida += arrInputsContatos[i].value + "<br />"
+	}
+
+	saidaContatos.innerHTML = saida;
 }
